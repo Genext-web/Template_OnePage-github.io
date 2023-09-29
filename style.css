@@ -1,0 +1,289 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{ scroll-behavior: smooth; }
+
+#home
+ {
+     height: 100vh;
+     background: url(images/a1.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.brand 
+  {
+    max-width: 700px;
+    width: 90%;
+    /*background-color: red;*/
+    padding: 20px;
+    text-align: center;
+  }
+  .brand h3
+    { 
+       color: white;
+       font-size: 3vw;
+     }
+
+ .brand h1
+ {
+    font-size: 5vw;
+    color: white;
+    text-transform: uppercase;
+    margin: 25px 0;
+ }
+
+ .btn
+   {
+     padding: 12px 20px;
+     border: none;
+     background: gold;
+     border-radius: 5px;
+     outline: none;
+     font-size: 2vw;
+     text-transform: uppercase;
+   }
+
+ /*----------------------------------------------------------------------------------------*/
+
+ nav 
+ {
+   /*padding: 10px;*/
+   background: rgba(0, 0, 0, 0.7);
+   position: fixed;
+   width: 100%;
+   top: 0;
+ }
+
+ .container 
+   {
+     max-width: 1140px;
+     width: 100%;
+     /*padding: 10px;*/
+     /*background: grey;*/
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+.logo 
+{
+	font-size: 24px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.ulist
+{
+  display: flex;
+  list-style: none;
+}
+.ulist li 
+{
+  padding: 17px 20px;
+  transition: 0.7s;
+}
+
+.ulist li a{ color: white; }
+
+.ulist li:hover{ background: #333; }
+/*-------------------------------------------Home Section Closed-----------------*/
+
+#about,#service,#blog,#contact{ padding: 50px; }
+
+.tx-center{ text-align: center; }
+.tx-upper{ text-transform: uppercase; }
+
+.border{ width: 250px; height: 5px; background: red; margin: 20px auto; border-radius: 50%; }
+
+.tx-muted{ color: grey; letter-spacing: 1px; }
+
+.about_container,.service_container,.blog_container,.team_container,.contact_container
+              { 
+                max-width: 1140px; 
+                width: 100%;
+                padding: 20px; 
+                /*background: #f2f2f2; */
+                margin: 25px auto; 
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+              }
+.about_container .part,.contact_container .part{ width: calc(50% - 20px); background: white; padding: 10px; margin-top: 10px; }
+
+.img{ width: 100%; height: 300px; padding: 5px; border: 1px solid #f2f2f2; }
+
+.my-20{ margin: 20px 0; }
+/*-----------------------------------------------*/
+
+.service_container{ justify-content: space-around!important;  }
+
+.service_container .part{width: calc(25% - 20px);  padding: 10px; margin-top: 10px; transition: 0.7s; }
+
+.tx-cyan{ color: cyan; font-size: 28px!important; }
+
+.service_container .part:hover { background: #f2f2f2; }
+/*----------------------------------------------------*/
+
+
+
+
+.blog_container .part,.team_container .part
+{
+         width: calc(33.33% - 20px);
+         background: white;
+         padding: 20px;
+}
+
+.blog_img{ width: 100%; height: 200px; display: block; }
+/*---------------------------------------------------------------*/
+
+.team_pics{
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 20px auto;
+}
+/*--------------------------------------------------*/
+
+#why{
+       background: url(images/ban.jpg);
+       padding: 100px;
+       background-size: cover;
+       background-position: center;
+       color: white;
+       background-attachment: fixed;
+}
+
+#why .inner{
+              padding: 50px;
+              max-width: 600px;
+              /*background: red;*/
+              width: 100%;
+}
+/*------------------------------------------------------------------*/
+input,select,textarea
+{
+      width: 100%;
+      margin: 10px;
+      outline: none;
+      border: none;
+      padding: 10px;
+      background: #f2f2f2;
+}
+  
+textarea
+        {
+          height: 100px;
+        }
+
+label
+{
+   margin:0 10px;
+}
+
+input[type=submit]
+{
+    background: green;
+    color: white;
+}
+/*-------------------------------------------------------*/
+
+footer{ background: grey; padding: 25px; text-align: center; color: lightgrey; }
+
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottom 
+{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: green;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+
+  -webkit-transition-property: transform;
+  transition-property: transform;
+
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  color: white;
+}
+.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+/*------------------------------------------------------*/
+
+@media(max-width: 900px)
+{
+   .ulist li { padding: 17px 15px; }
+
+   .service_container .part { width: calc(50% - 15px); }
+}
+
+/*------------------------------------------------------*/
+
+@media(max-width: 780px)
+{
+   .container,.about_container
+     {
+        flex-direction: column;
+     }
+    .about_container .part{ width: 100%; margin-top: 10px; }
+    .logo{ margin-top: 10px; }
+
+    .service_container .part,.contact_container .part { width:100% }
+    
+    .blog_container,.team_container{ justify-content: space-around; }
+    .blog_container .part,.team_container .part{ width: calc(50% - 15px); margin-top: 10px; }
+
+    #why{ padding: 50px; background-position: left; }
+
+}
+
+
+/*------------------------------------------------------*/
+
+@media(max-width: 600px)
+{
+   .ulist{ flex-direction: column; }
+   .ulist{ width: 100%; text-align: center; }
+   .blog_container .part,.team_container .part{ width: 100%; }
+   .team_container{ padding: 10PX 50PX; }
+}
